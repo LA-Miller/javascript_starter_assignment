@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Starter Assignment</title>
+</head>
+<body>
+
+    <label>
+        What language was created to add interactivity to the web?: 
+        <input class="course" type="text"></label></input>
+    </label>
+    
+</body>
+
+<script>
+    var txtCourse = document.querySelector('.course');
+
+    txtCourse.addEventListener('focusout',
+        (event) => {alert(txtCourse.value) })
+</script>
+</html>
